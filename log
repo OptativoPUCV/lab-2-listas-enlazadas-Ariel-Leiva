@@ -172,3 +172,9 @@ list.c:69:20: error: 'key' undeclared (first use in this function)
 list.c:69:20: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 03a486a
+Tue, Mar 25, 2025 11:56:14 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+744cb6a
