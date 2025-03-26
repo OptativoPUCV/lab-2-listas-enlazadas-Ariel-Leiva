@@ -144,3 +144,17 @@ Tue, Mar 25, 2025 11:54:09 PM:
  tests:  9|3
 total_score: 35/70
 c34156e
+Tue, Mar 25, 2025 11:55:30 PM: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:69:12: error: 'Node' has no member named 'key'
+   69 |     newNode->key = key;
+      |            ^~
+list.c:69:20: error: 'key' undeclared (first use in this function)
+   69 |     newNode->key = key;
+      |                    ^~~
+list.c:69:20: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0941f1b
