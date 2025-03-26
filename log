@@ -158,3 +158,17 @@ list.c:69:20: error: 'key' undeclared (first use in this function)
 list.c:69:20: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0941f1b
+Tue, Mar 25, 2025 11:55:56 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:69:12: error: 'Node' has no member named 'key'
+   69 |     newNode->key = key;
+      |            ^~
+list.c:69:20: error: 'key' undeclared (first use in this function)
+   69 |     newNode->key = key;
+      |                    ^~~
+list.c:69:20: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+03a486a
