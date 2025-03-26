@@ -113,3 +113,16 @@ Tue, Mar 25, 2025 11:47:36 PM:
  tests:  9|3
 total_score: 35/70
 e282e1e
+Tue, Mar 25, 2025 11:49:24 PM: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:69:46: error: 'return' with a value, in function returning void [-Wreturn-mismatch]
+   69 |     if(list->head == NULL) return list->head = newNode;
+      |                                   ~~~~~~~~~~~^~~~~~~~~
+list.c:67:6: note: declared here
+   67 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+Compilation failed
+66512fb
