@@ -58,6 +58,9 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
+    if(list->head == NULL) return NULL;
+    Node *aux = list->head->prev;
+    if(aux) return aux->data;
     return NULL;
 }
 
