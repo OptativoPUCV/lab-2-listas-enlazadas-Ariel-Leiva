@@ -188,3 +188,16 @@ Wed, Mar 26, 2025 12:07:30 AM:
  1 file changed, 7 deletions(-)
  tests:  0|0
 ab65ecf
+Wed, Mar 26, 2025 12:07:58 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:68:12: error: 'return' with a value, in function returning void [-Wreturn-mismatch]
+   68 |     return NULL;
+      |            ^~~~
+list.c:67:6: note: declared here
+   67 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+Compilation failed
+5f3dd2a
