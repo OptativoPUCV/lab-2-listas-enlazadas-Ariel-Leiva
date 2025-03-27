@@ -369,3 +369,8 @@ list.c:109:12: error: returning 'int' from a function with return type 'void *' 
       |            ^~~~
 Compilation failed
 9e2cf02
+Wed, Mar 26, 2025 11:58:17 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+58531ac

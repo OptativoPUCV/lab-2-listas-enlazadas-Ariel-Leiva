@@ -103,7 +103,7 @@ void * popCurrent(List * list) {
     if(list->current == NULL) return NULL;
     Node *izq = list->current->prev;
     Node *der = list->current->next;
-    int dato = list->current->data;
+    void *dato = list->current->data;
     if(izq->next != NULL)izq->next = der;
     if(der->prev != NULL)der->prev = izq;
     return dato;
