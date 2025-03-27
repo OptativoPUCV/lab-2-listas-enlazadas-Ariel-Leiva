@@ -100,12 +100,12 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    if(list->current == NULL) return NULL;
     Node *izq = list->current->prev;
     Node *der = list->current->next;
-    izq->next = der;
-    der->prev = izq;
-    free(list->current);
-    return;
+    if(izq->next != NULL)izq->next = der;
+    if(der->prev != NULL)der->prev = izq;
+    return NULL;
 }
 
 void cleanList(List * list) {
