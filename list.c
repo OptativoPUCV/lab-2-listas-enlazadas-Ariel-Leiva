@@ -105,12 +105,10 @@ void * popCurrent(List * list) {
     Node *der = list->current->next;
     void *dato = list->current->data;
 
-    if(izq != NULL && der !=NULL){
-        izq->next = der;
-        der->prev = izq;
-    }
     if(izq == NULL) list->head = der;
+    else izq->next = der;
     if(der == NULL) list->tail = izq;
+    else der->prev = izq;
 
     free(list->current);
     return dato;
