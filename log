@@ -260,3 +260,18 @@ Wed, Mar 26, 2025  8:25:10 AM:
  tests:  10|2
 total_score: 45/70
 df8effa
+Wed, Mar 26, 2025 11:33:12 PM: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function 'lastList':
+list.c:54:12: error: 'aux' undeclared (first use in this function)
+   54 |     return aux->data;
+      |            ^~~
+list.c:54:12: note: each undeclared identifier is reported only once for each function it appears in
+list.c:56:1: error: control reaches end of non-void function [-Werror=return-type]
+   56 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f2cd7e5
