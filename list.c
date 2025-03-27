@@ -104,8 +104,8 @@ void * popCurrent(List * list) {
     Node *izq = list->current->prev;
     Node *der = list->current->next;
     Node *aux = createNode(list->current->data);
-    if(izq->next != NULL)izq->next = der;
-    if(der->prev != NULL)der->prev = izq;
+    izq->next = der;
+    der->prev = izq;
     return aux->data;
 }
 
