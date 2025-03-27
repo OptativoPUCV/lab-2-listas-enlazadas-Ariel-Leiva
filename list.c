@@ -103,10 +103,9 @@ void * popCurrent(List * list) {
     
     Node *izq = list->current->prev;
     Node *der = list->current->next;
-    Node *aux = createNode(list->current->data);
     izq->next = der;
     der->prev = izq;
-    return aux->data;
+    return list->current;
 }
 
 void cleanList(List * list) {
