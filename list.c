@@ -104,7 +104,6 @@ void * popCurrent(List * list) {
     Node *der = list->current->next;
     izq->next = der;
     der->prev = izq;
-    free(list->current);
 }
 
 void cleanList(List * list) {
