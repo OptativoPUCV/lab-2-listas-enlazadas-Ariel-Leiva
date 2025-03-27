@@ -356,3 +356,16 @@ list.c:102:8: note: declared here
       |        ^~~~~~~~~~
 Compilation failed
 431b5eb
+Wed, Mar 26, 2025 11:57:58 PM: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'popCurrent':
+list.c:106:16: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  106 |     int dato = list->current->data;
+      |                ^~~~
+list.c:109:12: error: returning 'int' from a function with return type 'void *' makes pointer from integer without a cast [-Wint-conversion]
+  109 |     return dato;
+      |            ^~~~
+Compilation failed
+9e2cf02
