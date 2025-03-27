@@ -431,3 +431,17 @@ Thu, Mar 27, 2025 12:06:34 AM:
  1 file changed, 7 insertions(+)
  tests:  0|0
 3b2e097
+Thu, Mar 27, 2025 12:06:46 AM: 
+ list.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function 'popCurrent':
+list.c:105:11: error: unused variable 'der' [-Werror=unused-variable]
+  105 |     Node *der = list->current->next;
+      |           ^~~
+list.c:104:11: error: unused variable 'izq' [-Werror=unused-variable]
+  104 |     Node *izq = list->current->prev;
+      |           ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1527e56
